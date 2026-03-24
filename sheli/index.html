@@ -4822,6 +4822,7 @@ window.initMail2 = function () {
 				d.angryOrThink = ['怎么了？别在意，只是我自己的看法。'];
 			}
 			if (contactId === 'W') {
+	            d.happy = ['哎呀，我就知道你会喜欢万年果树林的。'];
 				d.angryOrThink = ['抱歉抱歉，我是不是说得太多了。'];
 			}
 			if (contactId === 'L') {
@@ -4840,13 +4841,23 @@ window.initMail2 = function () {
 				d.think = ['哈哈，关于西幽的事情我也只是听说。','听说听说。'];
 			}
 			if (contactId === 'L') {
-				d.angryOrThink = ['不、不带我吗？[大哭][大哭]','不带我也没关系的，学长玩得开心就好。'];
+				d.happy = ['学长什么都不用操心。','我会把其他东西准备好的！'];
+	            d.angryOrThink = ['不、不带我吗？[大哭][大哭]','不带我也没关系的，学长玩得开心就好。'];
 			}
 		}
 
 		if (topicKey === 'home' && contactId === 'A') {
 			d.angryOrThink = ['睡眠质量可是很重要的。'];
 		}
+
+	if (topicKey === 'home' && contactId === 'L') {			
+            d.happy = ['我会一直陪着学长的。'];		
+        }
+	
+	if (topicKey === 'coffee' && contactId === 'A') {
+			d.angryOrThink = ['就一杯，稍微放纵一下嘛。','我的身材可是维持得很好的。','你要检查一下吗？'];
+		}
+	
 
 		return d;
 	}
